@@ -1,0 +1,37 @@
+.WorksSection {
+  overflow: hidden;
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.cardTitle {
+  color: black;
+}
+.worksTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  color: #7e74f1;
+  letter-spacing: 0.06rem;
+}
+
+.Cards {
+  background-color: white;
+  padding: 3rem 5rem;
+  border-radius: 15px;
+}
+
+.Cards p {
+  font-size: 1rem;
+  padding-top: 1rem;
+  line-height: 150%;
+  color: black;
+}
