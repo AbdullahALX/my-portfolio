@@ -3,7 +3,7 @@ import '../Navbar/navbar.css';
 import logo from '../../assets/logo3.png';
 import { Link } from 'react-scroll';
 import contactIcon from '../../assets/contactMe.svg';
-import resumeFile from '../../assets/Resume-New.pdf';
+import resumeFile from '../../assets/ResumeLAST.pdf';
 
 const Navbar = () => {
   return (
