@@ -2,11 +2,12 @@ import React, { useRef, useState } from 'react';
 import '../Works/Works.css';
 import { motion as m } from 'framer-motion';
 import javaSwing from '../../assets/javaSwing.png';
+import ImageSwipper from '../ImageSwipper/ImageSwipper';
 
 const cards = [1, 2, 3, 4];
 
 const projectInfo = {
-  title: 'E- STORE SIMULATION',
+  title: 'SOON',
   info: ' ',
   id: '1',
 };
@@ -51,7 +52,7 @@ const Works = () => {
             onPanEnd={(e, info) => handlePanEnd(e, info, card)}
             ref={(el) => (containerRefs.current[card] = el)}
           >
-            {projectInfo.id == card && card !== selectedId && (
+            {card !== selectedId && (
               <div className="temp">
                 <h1 className="infoTitle">{projectInfo.title}</h1>
                 {/* <img src={javaSwing} className="logoWork" alt="" /> */}
@@ -59,7 +60,7 @@ const Works = () => {
             )}
             {selectedId === card && (
               <>
-                <div className="divC" id={projectInfo.id}></div>
+                <div className="divC" id={card.id}></div>
               </>
             )}
           </m.div>
