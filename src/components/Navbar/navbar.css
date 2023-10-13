@@ -2,7 +2,7 @@
   height: 5rem;
   width: 100%;
 
-  margin: 1rem auto;
+  margin: 0 1rem auto auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,6 @@
   object-fit: contain;
   height: 6rem;
   width: 8rem;
-  margin: 1rem;
 }
 .navLinks {
   display: flex;
@@ -98,7 +97,7 @@
 @media (max-width: 700px) {
   .menu {
     display: flex;
-    margin-top: 2.3rem;
+    margin-top: 1.2rem;
     margin-right: 1rem;
   }
 
