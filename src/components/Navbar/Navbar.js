@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Navbar/navbar.css';
 import logo from '../../assets/logo3.png';
 import { Link } from 'react-scroll';
@@ -6,6 +6,8 @@ import contactIcon from '../../assets/contactMe.svg';
 import resumeFile from '../../assets/ResumeLAST.pdf';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <img
@@ -17,7 +19,17 @@ const Navbar = () => {
           moveTo[0].scrollIntoView({ behavior: 'smooth', duration: '500' });
         }}
       />
-      <div className="navLinks">
+      <div
+        className="menu"
+        onClick={() => {
+          setIsOpen(!isOpen);
+        }}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className={isOpen ? 'open' : 'navLinks'}>
         <Link
           className="navLinkItem"
           activeClass="active"

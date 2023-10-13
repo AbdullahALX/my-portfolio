@@ -18,13 +18,14 @@
 }
 
 .contactTitle {
-  font-size: 3rem;
+  font-size: 4vw;
+  font-weight: 300;
   margin-bottom: 1rem;
   color: #7e74f1;
 }
 
 .contactText {
-  font-size: medium;
+  font-size: 2vmin;
   font-weight: 300;
   padding: 1rem;
 }

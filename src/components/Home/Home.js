@@ -13,8 +13,7 @@ const Home = () => {
       // whileInView={{ opacity: 1, x: 0 }}
       // transition={{ duration: 0.8 }}
     >
-      <img src={myImage} alt="photo-of-me" className="leftImage" />
-      <div>
+      <div className="textContainer">
         <span className="hello">
           Hello,
           <br />
@@ -48,6 +47,7 @@ const Home = () => {
           </button>
         </Link>
       </div>
+      <img src={myImage} alt="photo-of-me" className="leftImage" />
     </section>
   );
 };

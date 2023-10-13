@@ -1,33 +1,32 @@
 #Home {
   height: calc(100vh - 4rem);
-  width: 100vw;
-  max-width: 75rem;
+  width: 100rem;
+  max-width: 80rem;
   overflow: hidden;
   margin: 0 auto;
-  position: relative;
-  scroll-snap-align: start;
-}
-.leftImage {
-  transform: scale(-1, 1);
-  position: absolute;
-  z-index: -1;
-  top: 11rem;
-  right: -2rem;
-  object-fit: contain;
-  height: 40vh;
-  width: 45vw;
-}
-
-.homeContent {
-  height: 100vh;
-  padding: 2rem;
-  width: 100vw;
+  padding: 3rem;
   font-size: 3rem;
   font-weight: 600;
-  display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: left;
+  margin-top: 3rem;
+}
+
+.leftImage {
+  transform: scale(-1, 1);
+  display: inline-block;
+  z-index: -1;
+  object-fit: contain;
+  height: 37vh;
+  width: 40vw;
+}
+
+.textContainer {
+  display: inline-block;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  margin-right: 1rem;
 }
 
 .hello {
@@ -46,13 +45,14 @@
   line-height: 1.5;
   margin-top: 0.1rem;
   letter-spacing: 1px;
+  flex-wrap: nowrap;
 }
 
 .HireMeButton {
   cursor: pointer;
   color: white;
   border: 1px solid #7e74f1;
-  margin: 1rem 0;
+  margin: 2rem 0;
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
@@ -79,24 +79,30 @@
   margin-right: 0.4rem;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 1238px) {
   .leftImage {
-    right: -40vw;
+    height: 34vh;
+    width: 30vw;
+    margin-left: -3rem;
+  }
+
+  .textContainer {
+    margin-right: 0;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 970px) {
   .leftImage {
-    right: -50vw;
+    display: none;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .leftImage {
-    right: -90vw;
+@media (max-width: 380px) {
+  .textContainer {
   }
-  .description {
-    font-weight: 400;
-    background-color: #7e74f1;
+  #Home {
+    height: calc(100vh);
+    margin-bottom: 4rem;
   }
 }
