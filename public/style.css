@@ -5,6 +5,7 @@
   background-color: transparent;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,4 +13,6 @@ body {
   overflow: hidden;
   overflow-y: scroll;
   color: white;
+
+  overflow-x: hidden;
 }
