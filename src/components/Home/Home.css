@@ -1,7 +1,7 @@
 #Home {
   height: calc(100vh - 4rem);
   width: 100%;
-  max-width: 80rem;
+
   overflow: hidden;
   margin: 0 auto;
   padding: 3rem;
