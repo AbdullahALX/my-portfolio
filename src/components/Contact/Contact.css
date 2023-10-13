@@ -1,7 +1,7 @@
 .contactPage {
   height: calc(100vh- 4rem);
-  width: 100rem;
-  max-width: 60rem;
+  width: 100%;
+  max-width: 100rem;
   margin: 0 auto;
   text-align: center;
   align-items: center;
