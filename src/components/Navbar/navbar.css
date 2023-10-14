@@ -2,14 +2,17 @@
   height: 5rem;
   width: 100%;
 
-  margin: 0 1rem auto auto;
+  margin: 1rem 1rem auto auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
+
   z-index: 5;
   top: 0;
   background-color: #292929;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .logo {
